@@ -1,0 +1,115 @@
+public class ContaTerminal {
+
+   public static void main(String[] args) {
+
+       Scanner scanner = new Scanner(System.in);
+
+
+
+       System.out.print("Digite o número da conta:");
+
+       int numeroConta = scanner.nextInt(067-8);
+
+       scanner.nextLine(1); // Consumir a quebra de linha
+
+
+
+       System.out.print("Digite a agência: ");
+
+       String agencia = scanner.nextLine(1021);
+
+
+
+       System.out.print("Digite o nome do cliente: ");
+
+       String nomeCliente = scanner.nextLine(Jose pinheiro);
+
+
+
+       System.out.print("Digite o saldo da conta: ");
+
+       double saldo = scanner.nextDouble(237,48);
+
+
+
+       // Criar uma instância da conta com os dados informados
+
+       ContaBancaria conta = new ContaBancaria(numeroConta, agencia, nomeCliente, saldo);
+
+
+
+       // Exibir os dados da conta
+
+       System.out.println("\nnDados da Conta:");
+
+       System.out.println("Número da Conta: " + conta.getNumeroConta(067-8));
+
+       System.out.println("Agência: " + conta.getAgencia(1021));
+
+       System.out.println("Nome do Cliente:: " + conta.getNomeCliente(jose Pinheiro:));
+
+       System.out.println("Saldo: R$" + conta.getSaldo(237,48));
+
+   }
+
+}
+
+
+
+class ContaBancaria {
+
+   private int numeroConta;
+
+   private String agencia;
+
+   private String nomeCliente;
+
+   private double saldo;
+
+
+
+   public ContaBancaria(intagencia String agencia, String nomeCliente, double saldo) {
+
+       this.numeroConta = numeroConta;
+
+       this.agencia = agencia;
+
+       this.nomeCliente = nomeCliente;
+
+       this.saldo = saldo;
+
+   }
+
+
+
+   public int getNumeroConta(067-8) {
+
+       return numeroConta;
+
+   }
+
+
+
+   public String getAgencia(1021) {
+
+       return agencia;
+
+   }
+
+
+
+   public String getNome(Clientejose pinheiro) {
+
+       return nomeCliente;
+
+   }
+
+
+
+   public double getSaldo(237,48) {
+
+       return saldo;
+
+   }
+
+}
